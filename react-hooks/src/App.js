@@ -1,7 +1,9 @@
 
 import './App.css';
-import { Effector } from './components/UseEffect';
-import { Ref } from './components/UseRef';
+import { ImperativeHandler } from './components/UseImperativeHandler';
+// import { Effector } from './components/UseEffect';
+import { LayoutEffect } from './components/UseLayoutEffect';
+// import { Ref } from './components/UseRef';
 // import { Reducer } from './components/UseReducer';
 
 // import { Counter } from './components/UseState1';
@@ -14,7 +16,9 @@ function App() {
       {/* <InputUseState></InputUseState> */}
       {/* <Reducer></Reducer> */}
       {/* <Effector></Effector> */}
-      <Ref></Ref>
+      {/* <Ref></Ref> */}
+      {/* <LayoutEffect></LayoutEffect> */}
+      <ImperativeHandler></ImperativeHandler>
       
       
     </div>
