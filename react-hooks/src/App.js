@@ -1,6 +1,7 @@
 
 import './App.css';
-import { Reducer } from './components/UseReducer';
+import { Effector } from './components/UseEffect';
+// import { Reducer } from './components/UseReducer';
 
 // import { Counter } from './components/UseState1';
 // import { InputUseState } from './components/UseState2';
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       {/* <Counter></Counter> */}
       {/* <InputUseState></InputUseState> */}
-      <Reducer></Reducer>
+      {/* <Reducer></Reducer> */}
+      <Effector></Effector>
       
       
     </div>
