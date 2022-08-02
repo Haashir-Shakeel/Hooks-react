@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Context } from './components/UseContext';
 import { ImperativeHandler } from './components/UseImperativeHandler';
 // import { Effector } from './components/UseEffect';
 import { LayoutEffect } from './components/UseLayoutEffect';
@@ -18,7 +19,8 @@ function App() {
       {/* <Effector></Effector> */}
       {/* <Ref></Ref> */}
       {/* <LayoutEffect></LayoutEffect> */}
-      <ImperativeHandler></ImperativeHandler>
+      {/* <ImperativeHandler></ImperativeHandler> */}
+      <Context></Context>
       
       
     </div>
