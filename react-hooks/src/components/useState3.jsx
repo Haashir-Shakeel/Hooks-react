@@ -1,17 +1,17 @@
 import { useState } from "react"
 
 export const ComplexState = () =>{
-    const [formData, setFormData]=useState({
+    const [Contact, setContact]=useState({
         fName: "",
         lName: "",
         email: ""
 
     })
     const changeHandler = (event)=>{
-        const [name,value] = event.target
+        const {name,value} = event.target
         
 
-        setFormData(prevValue =>{
+        setContact(prevValue =>{
             if (name === "fName"){
                 return{
                     fName: value,
@@ -37,13 +37,13 @@ export const ComplexState = () =>{
     return (
         <div>
             <h1>
-                Hello {formData.fName} {formData.lName}
+                Hello {Contact.fName} {Contact.lName}
             </h1>
-            <p>{formData.email}</p>
+            <p>{Contact.email}</p>
             <form>
-                <input onChange={changeHandler} value={formData.fName} name="fName" placeholder="First Name" />
-                <input onChange={changeHandler} value={formData.lName} name="lName" placeholder="Last Name" />
-                <input onChange={changeHandler} value={formData.email} name="email" placeholder="Email"  />
+                <input onChange={changeHandler} value={Contact.fName} name="fName" placeholder="First Name" />
+                <input onChange={changeHandler} value={Contact.lName} name="lName" placeholder="Last Name" />
+                <input onChange={changeHandler} value={Contact.email} name="email" placeholder="Email"  />
                 <button type="submit">Submit</button>
             </form>
         </div>
