@@ -1,9 +1,10 @@
 
 import './App.css';
-import { Context } from './components/UseContext';
-import { ImperativeHandler } from './components/UseImperativeHandler';
+// import { Context } from './components/UseContext';
+// import { ImperativeHandler } from './components/UseImperativeHandler';
 // import { Effector } from './components/UseEffect';
-import { LayoutEffect } from './components/UseLayoutEffect';
+// import { LayoutEffect } from './components/UseLayoutEffect';
+import { ComplexState } from './components/useState3';
 // import { Ref } from './components/UseRef';
 // import { Reducer } from './components/UseReducer';
 
@@ -20,7 +21,8 @@ function App() {
       {/* <Ref></Ref> */}
       {/* <LayoutEffect></LayoutEffect> */}
       {/* <ImperativeHandler></ImperativeHandler> */}
-      <Context></Context>
+      {/* <Context></Context> */}
+      <ComplexState></ComplexState>
       
       
     </div>
